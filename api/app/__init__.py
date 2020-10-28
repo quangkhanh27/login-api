@@ -1,6 +1,6 @@
 from flask import Flask
-from app.extensions import mongo
-from app.Routers.TodoRouters import todo
+from .extensions import mongo
+from .Routers.TodoRouters import todo
 from flask_cors import CORS
 
 app = Flask(__name__)

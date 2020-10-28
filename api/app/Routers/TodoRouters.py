@@ -1,6 +1,6 @@
 from flask import Blueprint, request, json
-from app.Controllers.Todo import get_all_CTL, get_by_id, add_CTL, delete_CTL, update_CLT
-from app.Helper.JsonEnCode import JSONEncoder
+from ..Controllers.Todo import get_all_CTL, get_by_id, add_CTL, delete_CTL, update_CLT
+from ..Helper.JsonEnCode import JSONEncoder
 from bson.objectid import ObjectId
 from datetime import datetime
 

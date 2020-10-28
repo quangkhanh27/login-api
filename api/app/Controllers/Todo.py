@@ -1,4 +1,5 @@
-from app.extensions import db
+from ..extensions import db
+
 
 def get_all_CTL():
     return [x for x in db.get_collection('login').find({})]

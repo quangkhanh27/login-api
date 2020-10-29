@@ -20,7 +20,7 @@ def get_all():
 @todo.route('/api/login/', methods=['GET'])
 def get_by_id_todo():
     id = request.args['_id']
-    return json.htmlsafe_dumps(get_by_id(id), cls=JSONEncoder)
+    return json.htmlsafe_dumps(get_by_id(id))
 
 # http://localhost:5000/api/login  method = POST
 

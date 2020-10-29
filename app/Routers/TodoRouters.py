@@ -12,7 +12,7 @@ todo = Blueprint('todo', __name__)
 @todo.route('/api/login', methods=['GET'])
 def get_all():
     print(get_all_CTL())
-    return json.dumps(get_all_CTL(), cls=JSONEncoder)
+    return json.htmlsafe_dumps(get_all_CTL())
 
 # http://localhost:5000/api/login/?_id=  method = GET
 
